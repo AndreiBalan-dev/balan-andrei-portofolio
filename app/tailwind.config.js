@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         console: ["Inconsolata", "monospace"],
+        roboto: ['"Roboto"', "sans-serif"],
       },
     },
   },

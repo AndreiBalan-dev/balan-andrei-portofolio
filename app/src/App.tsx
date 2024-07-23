@@ -1,10 +1,13 @@
 import React from "react";
-import Console from "./components/Console";
+import Console from "./console/components/Console";
+import { ConsoleProvider } from "./console/context/ConsoleContext";
 
 const App: React.FC = () => {
   return (
     <div className="h-screen bg-gray-900">
-      <Console />
+      <ConsoleProvider>
+        <Console />
+      </ConsoleProvider>
     </div>
   );
 };
